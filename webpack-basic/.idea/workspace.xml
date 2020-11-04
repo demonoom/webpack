@@ -36,16 +36,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.index.js">
-    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/index.js" working-dir="$PROJECT_DIR$/src">
+  <component name="RunManager" selected="Node.js.main.js">
+    <configuration name="main.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/dist/main.js" working-dir="$PROJECT_DIR$/dist">
       <method v="2" />
     </configuration>
-    <configuration name="main.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/dist/main.js" working-dir="$PROJECT_DIR$/dist">
+    <configuration name="main.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/main.js" working-dir="$PROJECT_DIR$/src">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.index.js" />
+        <item itemvalue="Node.js.main.js" />
         <item itemvalue="Node.js.main.js" />
       </list>
     </recent_temporary>
@@ -63,7 +63,7 @@
       <updated>1604303310028</updated>
       <workItem from="1604303311551" duration="7077000" />
       <workItem from="1604395803551" duration="1519000" />
-      <workItem from="1604456819344" duration="5242000" />
+      <workItem from="1604456819344" duration="8304000" />
     </task>
     <servers />
   </component>
