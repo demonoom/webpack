@@ -106,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nconsole.log('我是a模块')\
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _a__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./a */ \"./src/a.js\");\n//CommonJS规范 在浏览器中不支持\r\n// var a = require('./a')\r\n\r\n//ES6的导入导出语法规范\r\n\r\nconsole.log(_a__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\r\nconsole.log('AirPods Pro');\n\n//# sourceURL=webpack:///./src/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _a__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./a */ \"./src/a.js\");\n//CommonJS规范 在浏览器中不支持\r\n// var a = require('./a')\r\n\r\n//ES6的导入导出语法规范\r\n\r\nconsole.log(_a__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\r\nconsole.log('AirPods Pro');\r\nconsole.log('------------召回AirPods Pro');\n\n//# sourceURL=webpack:///./src/main.js?");
 
 /***/ })
 

@@ -9,9 +9,7 @@ module.exports = {
         // path: path.resolve('__dirname,./dist'),
         //path.join():路径拼接
         path: path.join(__dirname,'./dist'),
-        filename: "bundle.js"
+        filename: "custom_bundle.js"
     },
-    mode:'development',
-    //开启监视模式，此时执行webpack指令进行打包会监视文件变化自动打包
-    watch: true
+    mode:'production'
 }
