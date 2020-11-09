@@ -6,3 +6,5 @@ import a from './a'
 console.log(a);
 console.log('AirPods Pro');
 console.log('------------召回AirPods Pro');
+console.log('AirPods Pro 换新');
+console.log('还送了一套耳塞!');
