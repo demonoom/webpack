@@ -32,5 +32,47 @@ module.exports = {
             filename: "index.html",
             template: "./src/index.html"
         })
-    ]
+    ],
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                //webpack读取loader时 是从右到左的读取， 会将css文件先交给最右侧的loader来处理
+                //loader的执行顺序是从右到左以管道的方式链式调用
+                //css-loader：解析css文件
+                //style-loader：将解析出来的结果 放到html中，使其生效
+                use: ['style-loader', 'css-loader']
+            },
+            {
+                test: /\.less$/,
+                use: ['style-loader', 'css-loader', 'less-loader']
+            },
+            {
+                test: /\.s(a|c)ss$/,
+                use: ['style-loader', 'css-loader', 'sass-loader']
+            },
+            {
+                test: /\.(png|jpg|jpeg|gif)$/,
+                use: {
+                    loader: "url-loader",      //url-loader封装了file-loader，所以使用url-loader时需要安装file-loader
+                    options: {
+                        limit: 5 * 1024,        //limit表示如果图片大于5kb，就以路径形式展示，小于的话就用base64格式展示
+                        outputPath: 'images',
+                        name: '[name]-[hash:4].[ext]'
+                    }
+                }
+            },
+            {
+                test: /\.(ttf|woff|woff2|eot|svg)$/,
+                // use: 'file-loader'
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        outputPath: '字体',
+                        name: '[hash:4].[ext]'
+                    }
+                }
+            }
+        ]
+    }
 }

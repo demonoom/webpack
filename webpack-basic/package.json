@@ -18,11 +18,20 @@
   "devDependencies": {
     "css-loader": "^5.0.1",
     "express": "^4.17.1",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^4.5.0",
+    "less": "^3.12.2",
+    "less-loader": "^7.0.2",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.0.5",
     "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1",
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.1",
     "webpack-dev-middleware": "^3.6.2",
     "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "bootstrap": "^3.4.1"
   }
 }
