@@ -72,6 +72,20 @@ module.exports = {
                         name: '[hash:4].[ext]'
                     }
                 }
+            },
+            {
+                test: /\.js$/,
+                use: {
+                    loader: "babel-loader",     //webpack需要用到babel-loader将Js代码转换，如何转换需要用到babel核心功能（@babel/core），还需要预设（@babel/preset）,env预设支持大部分语法
+                    /*options: {
+                        presets: ['@babel/env'],
+                        plugins: [
+                            '@babel/plugin-proposal-class-properties',
+                            '@babel/plugin-transform-runtime'
+                        ]
+                    }*/
+                },
+                exclude: /node_modules/
             }
         ]
     }
