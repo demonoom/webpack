@@ -88,5 +88,14 @@ module.exports = {
                 exclude: /node_modules/
             }
         ]
-    }
+    },
+    /**
+     * 开发环境：cheap-module-eval-source-map
+     * 生产环境：none (不使用source map)
+     * 使用cheap模式可以大幅提高source map生成的效率
+     * 使用module可支持babel这种预编译工具，映射转换前的代码
+     * 使用eval方式可大幅提高持续构建效率
+     * 使用eval-source-map模式可以减少网络请求
+     */
+    devtool: 'cheap-module-eval-source-map'
 }

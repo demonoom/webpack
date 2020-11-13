@@ -75,7 +75,7 @@ console.log(newFn.next());   //2
 console.log(newFn.next());   //3
 console.log(newFn.next());   //undefined
 
-// import '@babel/polyfill'
+import '@babel/polyfill'
 
 let str = '123'
 //js是一门动态语言，在代码执行时可以随时为对象添加属性或方法
