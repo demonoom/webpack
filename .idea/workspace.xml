@@ -1,10 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d6d984c7-8428-44b7-b865-bbb4eee7a6a6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/webpack-basic/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-basic/.babelrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack-basic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-basic/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack-basic/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-basic/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack-advanced/build/webpack.base.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack-advanced/build/webpack.prod.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack-advanced/src/api/http.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack-advanced/src/img/kda.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack-advanced/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack-advanced/src/other.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack-advanced/src/other.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack-basic/assets/LOL.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-basic/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-basic/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-basic/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-basic/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-basic/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-basic/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack-basic/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-basic/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -12,21 +39,42 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1kEBk1MT4RU7Wd73vnCQbRTxl81" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/webpack-advanced" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\noom\webpack\webpack-advanced\build" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\noom\webpack\webpack-advanced" />
+      <recent name="D:\noom\webpack\webpack-advanced\src\img" />
+      <recent name="D:\noom\webpack\webpack-basic\assets" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -54,14 +102,32 @@
       <option name="presentableId" value="Default" />
       <updated>1605256010880</updated>
       <workItem from="1605256012728" duration="14000" />
-      <workItem from="1605256075121" duration="4288000" />
+      <workItem from="1605256075121" duration="4639000" />
+      <workItem from="1605492045808" duration="1807000" />
+      <workItem from="1605493890916" duration="16073000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1605493853785">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.2560.1410@0.0.1920.1050" timestamp="1605493853785" />
     <state width="1899" height="285" key="GridCell.Tab.0.bottom" timestamp="1605256268496">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -83,5 +149,9 @@
     </state>
     <state x="509" y="227" key="SettingsEditor/0.0.1920.1050/1920.0.2560.1410@0.0.1920.1050" timestamp="1605256179450" />
     <state x="2578" y="337" key="SettingsEditor/0.0.1920.1050/1920.0.2560.1410@1920.0.2560.1410" timestamp="1605256136652" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1605519632240">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.0.2560.1410@0.0.1920.1050" timestamp="1605519632240" />
   </component>
 </project>

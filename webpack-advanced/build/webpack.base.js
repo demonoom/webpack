@@ -6,25 +6,24 @@ const Webpack = require('webpack')
 
 //webpack的配置文件遵循着CommonJS规范
 module.exports = {
-    entry: './src/main.js',
+    // entry: './src/main.js',
+    //##1.修改为多入口
+    entry: {
+        index: './src/index.js',
+        other: './src/other.js'
+    },
     output: {
         //path.resolve():解析当前相对路径的绝对路径
         // path: path.resolve('./dist'),
         // path: path.resolve('__dirname,./dist'),
         //path.join():路径拼接
-        path: path.join(__dirname, './dist'),
-        filename: "bundle.js"
+        path: path.join(__dirname, '..', './dist'),
+        // filename: "bundle.js"
+        //##2.多入口无法对应一个固定的出口，所以修改filename为[name]变量
+        filename: "[name].js"
     },
-    mode: 'production',
     //开启监视模式，此时执行webpack指令进行打包会监视文件变化自动打包
     //watch: true
-    devServer: {
-        open: true,               //编译结束打开浏览器
-        port: 3000,               //express服务端口号
-        compress: true,           //express服务器gzip压缩
-        hot: true,                 //热模块更替（HMR），老版本还需要装插件，新版不需要
-        // contentBase: './src'     //服务器根目录
-    },
     plugins: [
         /**
          * 1.devServer时根据模板在express项目根目录下生成html文件（类似于devServer生成内存中的bundle.js）
@@ -33,7 +32,14 @@ module.exports = {
          */
         new HtmlWebpackPlugin({
             filename: "index.html",
-            template: "./src/index.html"
+            template: "./src/index.html",
+            chunks: ['index']
+        }),
+        //##3.如果用了html插件，需要手动配置多入口对应的html文件，将指定其对应的输出文件
+        new HtmlWebpackPlugin({
+            filename: "other.html",
+            template: "./src/other.html",
+            chunks: ['other']    //chunks:['index','other']
         }),
         /**
          * 该插件在npm run build时自动清除dist目录后重新生成，非常方便
@@ -43,13 +49,21 @@ module.exports = {
          * 该插件将不需要webpack打包的静态资源复制到打包后的文件夹下
          */
         new CopyWebpackPlugin([{
-            from: path.resolve('assets'),
+            from: path.join(__dirname,'..','assets'),
             to: 'assets'
         }]),
         /**
          * 这是一个webpack的内置插件，用于给打包的JS文件加上版权注释信息
          */
-        new Webpack.BannerPlugin('乏滴狠')
+        new Webpack.BannerPlugin('乏滴狠'),
+        /**
+         * 将库自动加载到每个模块
+         * 自动加载 jquery，我们可以将两个变量都指向对应的 node 模块
+         */
+        new Webpack.ProvidePlugin({
+            $: 'jquery',
+            jquery: 'jquery'
+        })
     ],
     module: {
         rules: [
@@ -76,7 +90,8 @@ module.exports = {
                     options: {
                         limit: 5 * 1024,        //limit表示如果图片大于5kb，就以路径形式展示，小于的话就用base64格式展示
                         outputPath: 'images',
-                        name: '[name]-[hash:4].[ext]'
+                        name: '[name]-[hash:4].[ext]',
+                        esModule: false
                     }
                 }
             },
@@ -87,7 +102,8 @@ module.exports = {
                     loader: 'file-loader',
                     options: {
                         outputPath: '字体',
-                        name: '[hash:4].[ext]'
+                        name: '[hash:4].[ext]',
+                        esModule: false
                     }
                 }
             },
@@ -104,16 +120,26 @@ module.exports = {
                     }*/
                 },
                 exclude: /node_modules/
+            },
+            //html-withimg-loader和file-loader(url-loader)产生了冲突，同时使用两种loader，需要在file-loader(url-loader)的options中添加一条配置项esModule: false。参考链接https://www.cnblogs.com/webSong/p/12118595.html
+            {
+                test: /\.(htm|html)$/,
+                use: 'html-withimg-loader'          //使html中的图片参与到webpack打包中，使用时，只需要在html中正常引用图片即可，webpack会找到对应的资源进行打包，并修改html中的引用路径
+            },
+            /**
+             * 通过expose-loader进行全局变量的注入
+             * 为了解决一些插件不支持commonJs引入的问题（如:bootstrap.js，它只允许jQuery暴露为全局变量才可用）
+             */
+            {
+                //用于解析jQuery模块的绝对路径
+                test: require.resolve('jquery'),
+                use: {
+                    loader: 'expose-loader',
+                    options: {
+                        exposes: ['$', 'jQuery']  //将 jQuery 暴露至全局并称为 $或jQuery
+                    }
+                }
             }
         ]
     },
-    /**
-     * 开发环境：cheap-module-eval-source-map
-     * 生产环境：none (不使用source map)
-     * 使用cheap模式可以大幅提高source map生成的效率
-     * 使用module可支持babel这种预编译工具，映射转换前的代码
-     * 使用eval方式可大幅提高持续构建效率
-     * 使用eval-source-map模式可以减少网络请求
-     */
-    devtool: 'cheap-module-eval-source-map'
 }
