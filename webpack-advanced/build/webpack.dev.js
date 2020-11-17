@@ -11,8 +11,24 @@ module.exports = merge(baseConfig, {
         open: true,               //编译结束打开浏览器
         port: 3000,               //express服务端口号
         compress: true,           //express服务器gzip压缩
-        hot: true,                 //热模块更替（HMR），老版本还需要装插件，新版不需要
-        // contentBase: './src'     //服务器根目录
+        hot: true,                //热模块更替（HMR），老版本还需要装插件，新版不需要
+        // contentBase: './src'   //服务器根目录
+        proxy: {                  //将所有ajax请求发送给devServer服务器，再由devServer服务器做一次转发，发送给数据接口服务器
+            // 当前端请求 /api 地址时，会将请求转发到
+            // http://localhost:9999/api
+            // 举例：客户端现在请求的是 /api/getUserInfo
+            // 此时会将请求转发到：http://localhost:9999/api/getUserInfo
+            '/api': 'http://localhost:9999',
+            '/serve': {
+                target: 'http://localhost:9999',
+                //转发请求时不会携带 /serve
+                // 举例：客户端现在请求的是 /serve/getMoney
+                //此时会将请求转发到：http://localhost:9999/getMoney
+                pathRewrite: {
+                    '^/serve': ''
+                }
+            },
+        }
     },
     /**
      * 开发环境：cheap-module-eval-source-map

@@ -20,19 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6d984c7-8428-44b7-b865-bbb4eee7a6a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/webpack-advanced/build/webpack.base.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack-advanced/build/webpack.prod.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack-advanced/src/api/http.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack-advanced/src/img/kda.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack-advanced/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack-advanced/src/other.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack-advanced/src/other.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack-basic/assets/LOL.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack-advanced/src/hot_module.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack-basic/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-basic/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack-basic/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-basic/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack-basic/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-basic/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack-basic/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-basic/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-advanced/build/webpack.dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-advanced/build/webpack.dev.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-advanced/src/api/http.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-advanced/src/api/http.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-advanced/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-advanced/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +37,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -61,16 +56,18 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/webpack-advanced" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/server" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\noom\webpack\server" />
       <recent name="D:\noom\webpack\webpack-advanced\build" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\noom\webpack\server" />
       <recent name="D:\noom\webpack\webpack-advanced" />
       <recent name="D:\noom\webpack\webpack-advanced\src\img" />
       <recent name="D:\noom\webpack\webpack-basic\assets" />
@@ -104,7 +101,9 @@
       <workItem from="1605256012728" duration="14000" />
       <workItem from="1605256075121" duration="4639000" />
       <workItem from="1605492045808" duration="1807000" />
-      <workItem from="1605493890916" duration="16073000" />
+      <workItem from="1605493890916" duration="16294000" />
+      <workItem from="1605580240568" duration="5232000" />
+      <workItem from="1605594093586" duration="9640000" />
     </task>
     <servers />
   </component>
@@ -124,10 +123,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1605493853785">
+    <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1605600343343">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.2560.1410@0.0.1920.1050" timestamp="1605493853785" />
+    <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.2560.1410@0.0.1920.1050" timestamp="1605600343343" />
     <state width="1899" height="285" key="GridCell.Tab.0.bottom" timestamp="1605256268496">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -149,9 +148,24 @@
     </state>
     <state x="509" y="227" key="SettingsEditor/0.0.1920.1050/1920.0.2560.1410@0.0.1920.1050" timestamp="1605256179450" />
     <state x="2578" y="337" key="SettingsEditor/0.0.1920.1050/1920.0.2560.1410@1920.0.2560.1410" timestamp="1605256136652" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1605519632240">
+    <state x="662" y="123" width="596" height="804" key="find.popup" timestamp="1605594409500">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.0.2560.1410@0.0.1920.1050" timestamp="1605519632240" />
+    <state x="662" y="123" width="596" height="804" key="find.popup/0.0.1920.1050/1920.0.2560.1410@0.0.1920.1050" timestamp="1605594409500" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1605603404036">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.0.2560.1410@0.0.1920.1050" timestamp="1605603404036" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/webpack-advanced/src/api/http.js</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
