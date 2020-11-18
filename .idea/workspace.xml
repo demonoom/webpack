@@ -20,10 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6d984c7-8428-44b7-b865-bbb4eee7a6a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/webpack-advanced/src/constant.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack-advanced/src/math.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack-optimize-css/postcss.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack-advanced/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-advanced/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-optimize-css/build/webpack.base.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-optimize-css/build/webpack.base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-optimize-css/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-optimize-css/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,21 +53,23 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/webpack-optimize-css/postcss.config.js" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/webpack-optimize-css/postcss.config.js" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\noom\webpack\server" />
-      <recent name="D:\noom\webpack\webpack-advanced\build" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\webpack" />
       <recent name="D:\noom\webpack\server" />
       <recent name="D:\noom\webpack\webpack-advanced" />
       <recent name="D:\noom\webpack\webpack-advanced\src\img" />
       <recent name="D:\noom\webpack\webpack-basic\assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\noom\webpack\server" />
+      <recent name="D:\noom\webpack\webpack-advanced\build" />
     </key>
   </component>
   <component name="RunManager">
@@ -104,6 +106,8 @@
       <workItem from="1605666651326" duration="8349000" />
       <workItem from="1605686592601" duration="3097000" />
       <workItem from="1605689751101" duration="3738000" />
+      <workItem from="1605713741543" duration="1915000" />
+      <workItem from="1605716506072" duration="3350000" />
     </task>
     <servers />
   </component>
@@ -123,9 +127,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1605600343343">
+    <state x="92" y="92" width="1736" height="866" key="DiffContextDialog" timestamp="1605718543434">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state x="92" y="92" width="1736" height="866" key="DiffContextDialog/0.0.1920.1050/1920.0.1440.870@0.0.1920.1050" timestamp="1605718543434" />
+    <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1605718093940">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1440.870@0.0.1920.1050" timestamp="1605718093940" />
     <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.2560.1410@0.0.1920.1050" timestamp="1605600343343" />
     <state width="1899" height="285" key="GridCell.Tab.0.bottom" timestamp="1605256268496">
       <screen x="0" y="0" width="1920" height="1050" />

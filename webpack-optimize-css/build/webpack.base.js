@@ -70,17 +70,17 @@ module.exports = {
                 //css-loader：解析css文件
                 //style-loader：将解析出来的结果 放到html中，使其生效
                 // use: ['style-loader', 'css-loader']
-                use: [MiniCssExtractPlugin.loader, 'css-loader','postcss-loader']
+                use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
             },
             {
                 test: /\.less$/,
                 // use: ['style-loader', 'css-loader', 'less-loader']
-                use: [MiniCssExtractPlugin.loader, 'css-loader', 'less-loader']
+                use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'less-loader']
             },
             {
                 test: /\.s(a|c)ss$/,
                 // use: ['style-loader', 'css-loader', 'sass-loader']
-                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+                use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader']
             },
             {
                 test: /\.(png|jpg|jpeg|gif)$/,
