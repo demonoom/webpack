@@ -20,12 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6d984c7-8428-44b7-b865-bbb4eee7a6a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack-advanced/src/hot_module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack-advanced/src/constant.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack-advanced/src/math.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack-advanced/build/webpack.dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-advanced/build/webpack.dev.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack-advanced/src/api/http.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-advanced/src/api/http.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack-advanced/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-advanced/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +100,10 @@
       <workItem from="1605492045808" duration="1807000" />
       <workItem from="1605493890916" duration="16294000" />
       <workItem from="1605580240568" duration="5232000" />
-      <workItem from="1605594093586" duration="9640000" />
+      <workItem from="1605594093586" duration="10721000" />
+      <workItem from="1605666651326" duration="8349000" />
+      <workItem from="1605686592601" duration="3097000" />
+      <workItem from="1605689751101" duration="3738000" />
     </task>
     <servers />
   </component>
@@ -152,17 +152,16 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="662" y="123" width="596" height="804" key="find.popup/0.0.1920.1050/1920.0.2560.1410@0.0.1920.1050" timestamp="1605594409500" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1605603404036">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1605690566167">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.0.2560.1410@0.0.1920.1050" timestamp="1605603404036" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.0.2560.1410@0.0.1920.1050" timestamp="1605690566167" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/webpack-advanced/src/api/http.js</url>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
