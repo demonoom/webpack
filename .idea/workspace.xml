@@ -20,10 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6d984c7-8428-44b7-b865-bbb4eee7a6a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/webpack-optimize-css/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack-optimize-js/src/other.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack-optimize-css/build/webpack.base.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-optimize-css/build/webpack.base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-optimize-css/build/webpack.prod.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-optimize-css/build/webpack.prod.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack-optimize-css/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-optimize-css/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-optimize-css/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-optimize-css/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,10 +52,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/webpack-optimize-css/postcss.config.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/webpack-optimize-css" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/webpack-optimize-css/postcss.config.js" />
@@ -108,6 +111,9 @@
       <workItem from="1605689751101" duration="3738000" />
       <workItem from="1605713741543" duration="1915000" />
       <workItem from="1605716506072" duration="3350000" />
+      <workItem from="1605851503995" duration="5939000" />
+      <workItem from="1605860254984" duration="77000" />
+      <workItem from="1605860441540" duration="6155000" />
     </task>
     <servers />
   </component>
@@ -127,15 +133,19 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="710" y="325" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605859297458">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="710" y="325" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050/1920.0.2560.1410@0.0.1920.1050" timestamp="1605859297458" />
     <state x="92" y="92" width="1736" height="866" key="DiffContextDialog" timestamp="1605718543434">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="92" y="92" width="1736" height="866" key="DiffContextDialog/0.0.1920.1050/1920.0.1440.870@0.0.1920.1050" timestamp="1605718543434" />
-    <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1605718093940">
+    <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1605860329381">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1440.870@0.0.1920.1050" timestamp="1605718093940" />
-    <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.2560.1410@0.0.1920.1050" timestamp="1605600343343" />
+    <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.2560.1410@0.0.1920.1050" timestamp="1605860329381" />
     <state width="1899" height="285" key="GridCell.Tab.0.bottom" timestamp="1605256268496">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -161,10 +171,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="662" y="123" width="596" height="804" key="find.popup/0.0.1920.1050/1920.0.2560.1410@0.0.1920.1050" timestamp="1605594409500" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1605690566167">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1605863762607">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.0.2560.1410@0.0.1920.1050" timestamp="1605690566167" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.0.2560.1410@0.0.1920.1050" timestamp="1605863762607" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

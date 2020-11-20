@@ -7,7 +7,11 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 //webpack的配置文件遵循着CommonJS规范
 module.exports = {
-    entry: './src/main.js',
+    // entry: './src/main.js',
+    entry: {
+        main: './src/main.js',
+        other: './src/other.js'
+    },
     output: {
         //path.resolve():解析当前相对路径的绝对路径
         // path: path.resolve('./dist'),
@@ -16,7 +20,7 @@ module.exports = {
         path: path.join(__dirname, '..', './dist'),
         // filename: "bundle.js"
         //##2.多入口无法对应一个固定的出口，所以修改filename为[name]变量
-        filename: "[name].js"
+        filename: "[name].bundle.js"
     },
     //开启监视模式，此时执行webpack指令进行打包会监视文件变化自动打包
     //watch: true
@@ -70,7 +74,6 @@ module.exports = {
                 //css-loader：解析css文件
                 //style-loader：将解析出来的结果 放到html中，使其生效
                 // use: ['style-loader', 'css-loader']
-                //postcss-loader：自动添加css前缀
                 use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
             },
             {
@@ -126,20 +129,14 @@ module.exports = {
                 test: /\.(htm|html)$/,
                 use: 'html-withimg-loader'          //使html中的图片参与到webpack打包中，使用时，只需要在html中正常引用图片即可，webpack会找到对应的资源进行打包，并修改html中的引用路径
             },
-            /**
-             * 通过expose-loader进行全局变量的注入
-             * 为了解决一些插件不支持commonJs引入的问题（如:bootstrap.js，它只允许jQuery暴露为全局变量才可用）
-             */
-            {
-                //用于解析jQuery模块的绝对路径
-                test: require.resolve('jquery'),
-                use: {
-                    loader: 'expose-loader',
-                    options: {
-                        exposes: ['$', 'jQuery']  //将 jQuery 暴露至全局并称为 $或jQuery
-                    }
-                }
-            }
         ]
     },
+    optimization: {
+        /**
+         * Webpack v4以上使用内置插件SplitChunksPlugin抽取公共代码
+         */
+        splitChunks: {
+            chunks: 'all'
+        }
+    }
 }

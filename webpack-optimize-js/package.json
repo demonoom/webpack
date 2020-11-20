@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "production": "webpack --config webpack.custom.config.js",
     "build": "webpack --config build/webpack.prod.js",
+    "dev-build": "webpack --config build/webpack.dev.js",
     "watch": "webpack --watch",
     "dev2": "webpack-dev-server --contentBase src --open --port 5000 --hot --compress",
     "dev": "webpack-dev-server --config build/webpack.dev.js",
@@ -19,6 +20,7 @@
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@babel/plugin-transform-runtime": "^7.12.1",
     "@babel/preset-env": "^7.12.1",
     "autoprefixer": "^10.0.2",

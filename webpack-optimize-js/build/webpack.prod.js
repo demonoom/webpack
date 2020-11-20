@@ -18,13 +18,7 @@ module.exports = merge(baseConfig, {
     ],
     optimization: {
         minimizer: [
-            /**
-             * 使用css-minimizer-webpack-plugin插件来完成css压缩
-             */
             new CssMinimizerPlugin(),
-            /**
-             * 由于配置css压缩时会覆盖掉webpack默认的优化配置，导致JS代码无法压缩，所以还需要手动把JS代码压缩插件导入进来
-             */
             new UglifyJsPlugin({
                 cache: true,
                 parallel: true,
