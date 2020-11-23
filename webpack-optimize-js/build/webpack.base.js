@@ -7,11 +7,11 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 //webpack的配置文件遵循着CommonJS规范
 module.exports = {
-    // entry: './src/main.js',
-    entry: {
+    entry: './src/main.js',
+    /*entry: {
         main: './src/main.js',
         other: './src/other.js'
-    },
+    },*/
     output: {
         //path.resolve():解析当前相对路径的绝对路径
         // path: path.resolve('./dist'),
@@ -131,12 +131,12 @@ module.exports = {
             },
         ]
     },
-    optimization: {
-        /**
+    /*optimization: {
+        /!**
          * Webpack v4以上使用内置插件SplitChunksPlugin抽取公共代码
-         */
+         *!/
         splitChunks: {
             chunks: 'all'
         }
-    }
+    }*/
 }
