@@ -1,12 +1,14 @@
 //静态导入
-// import $ from 'jquery'
+import $ from 'jquery'
+
+// import 'bootstrap'
 
 //需求：当用户点击按钮时，添加一个div
-/*$(function () {
+$(function () {
     $('#btn').click(function () {
         $('<div></div>').html('我是main').appendTo('body')
     })
-})*/
+})
 
 /*window.onload = function () {
     document.getElementById('btn').onclick = function () {
@@ -34,7 +36,7 @@
 // })
 
 
-window.onload = function () {
+/*window.onload = function () {
     document.getElementById('btn').onclick = function () {
         //当用户点击按钮时才会执行
         // $('<div></div>').html('我是main').appendTo('body')
@@ -47,4 +49,8 @@ window.onload = function () {
 //动态导入
 function getComponent() {
     return import('jquery').then(({default: $}) => $('<div></div>').html('main'))
-}
+}*/
+
+import a from './a'
+
+console.log(a);

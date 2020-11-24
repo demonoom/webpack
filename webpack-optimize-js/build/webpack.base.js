@@ -122,21 +122,43 @@ module.exports = {
                         ]
                     }*/
                 },
-                exclude: /node_modules/
+                exclude: /node_modules/,
+                include: path.resolve('../src')
             },
             //html-withimg-loader和file-loader(url-loader)产生了冲突，同时使用两种loader，需要在file-loader(url-loader)的options中添加一条配置项esModule: false。参考链接https://www.cnblogs.com/webSong/p/12118595.html
             {
                 test: /\.(htm|html)$/,
                 use: 'html-withimg-loader'          //使html中的图片参与到webpack打包中，使用时，只需要在html中正常引用图片即可，webpack会找到对应的资源进行打包，并修改html中的引用路径
             },
-        ]
+        ],
+        noParse: /jquery|bootstrap/,    //阻止webpack浪费精力去解析这些明知道没有依赖的库
     },
-    /*optimization: {
-        /!**
+    optimization: {
+        /**
          * Webpack v4以上使用内置插件SplitChunksPlugin抽取公共代码
-         *!/
+         */
         splitChunks: {
-            chunks: 'all'
+            chunks: 'all',  //默认值为 async 表示只会对异步加载的模块进行代码分割 ,可选值 还有 all 和 initial
+            minSize: 30000,     //模块最少大于30kb才拆分
+            maxSize: 0,     //如果超出了maxSize，会进一步进行拆分
+            minChunks: 1,       //模块最少引用一次才会被拆分
+            maxAsyncRequests: 5,        //异步加载时同时发送的请求数量最大不能超过5，超过5的部分不拆分
+            maxInitialRequests: 3,      //页面初始化时同时发送的请求数量最大不能超过3，超过3的部分不拆分
+            automaticNameDelimiter: '~',        //默认的连接符
+            name: true,         //拆分的chunk名,设为true表示根据模块名和CacheGroups的key来自动生成，使用上面连接符连接
+            cacheGroups: { // 缓存组配置,上面配置读取完成后进行拆分,如果需要把多个模块拆分到一个文件,就需要缓存,所以命名为缓存组
+                vendors: { // 自定义缓存组名------为了打包第三方模块
+                    test: /[\\/]node_modules[\\/]/, // 检查node_modules目录,只要模块在该目录下就使用上面配置拆分到这个组
+                    priority: -10, // 权重-10,决定了哪个组优先匹配,例如node_modules下有个模块要拆分,同时满足vendors和default组,此时就会分到vendors组,因为-10 > -20
+                    filename: 'verdors.js'  //配置了就不会按照 automaticNameDelimiter 的规则命名
+                },
+                default: { // 默认缓存组名----一般用于自己写的模块
+                    minChunks: 2, // 最少引用两次才会被拆分
+                    priority: -20, // 权重-20
+                    reuseExistingChunk: true, // 如果主入口中引入了两个模块,其中一个正好也引用了后一个,就会直接复用,无需引用两次
+                    filename: 'noom.js'  //配置了就不会按照 automaticNameDelimiter 的规则命名
+                }
+            }
         }
-    }*/
+    }
 }
