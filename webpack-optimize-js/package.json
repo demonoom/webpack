@@ -54,6 +54,7 @@
     "@babel/runtime": "^7.12.5",
     "axios": "^0.21.0",
     "bootstrap": "^3.4.1",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "moment": "^2.29.1"
   }
 }

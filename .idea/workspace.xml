@@ -20,9 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6d984c7-8428-44b7-b865-bbb4eee7a6a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/webpack-optimize-js/src/a.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack-optimize-js/build/webpack.base.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-optimize-js/build/webpack.base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-optimize-js/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-optimize-js/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-optimize-js/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-optimize-js/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack-optimize-js/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-optimize-js/src/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +41,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/webpack-optimize-js/package.json" />
   </component>
   <component name="ProjectId" id="1kEBk1MT4RU7Wd73vnCQbRTxl81" />
   <component name="ProjectLevelVcsManager">
@@ -114,6 +118,8 @@
       <workItem from="1605860441540" duration="6364000" />
       <workItem from="1606095687886" duration="7354000" />
       <workItem from="1606183573763" duration="10054000" />
+      <workItem from="1606213132299" duration="52000" />
+      <workItem from="1606284613976" duration="9104000" />
     </task>
     <servers />
   </component>
@@ -137,10 +143,11 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="710" y="325" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050/1920.0.2560.1410@0.0.1920.1050" timestamp="1605859297458" />
-    <state x="92" y="92" width="1736" height="866" key="DiffContextDialog" timestamp="1605718543434">
+    <state x="92" y="92" width="1736" height="866" key="DiffContextDialog" timestamp="1606296795801">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="92" y="92" width="1736" height="866" key="DiffContextDialog/0.0.1920.1050/1920.0.1440.870@0.0.1920.1050" timestamp="1605718543434" />
+    <state x="92" y="92" width="1736" height="866" key="DiffContextDialog/0.0.1920.1050/1920.0.2560.1410@0.0.1920.1050" timestamp="1606296795801" />
     <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1605860329381">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

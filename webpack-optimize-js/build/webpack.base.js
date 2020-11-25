@@ -63,7 +63,14 @@ module.exports = {
          */
         new MiniCssExtractPlugin({
             filename: '[name].css'
-        })
+        }),
+        /**
+         * 使用IgnorePlugin插件来忽略掉moment模块的locale目录
+         * 参数1：表示要忽略的资源路径
+         * 参数2：要忽略的资源上下文（所在哪个目录）
+         * 两个参数都是正则对象
+         */
+        new Webpack.IgnorePlugin(/\.\/locale$/,/moment$/)
     ],
     module: {
         rules: [
@@ -123,7 +130,7 @@ module.exports = {
                     }*/
                 },
                 exclude: /node_modules/,
-                include: path.resolve('../src')
+                include: path.join(__dirname, '../src')
             },
             //html-withimg-loader和file-loader(url-loader)产生了冲突，同时使用两种loader，需要在file-loader(url-loader)的options中添加一条配置项esModule: false。参考链接https://www.cnblogs.com/webSong/p/12118595.html
             {
@@ -131,14 +138,14 @@ module.exports = {
                 use: 'html-withimg-loader'          //使html中的图片参与到webpack打包中，使用时，只需要在html中正常引用图片即可，webpack会找到对应的资源进行打包，并修改html中的引用路径
             },
         ],
-        noParse: /jquery|bootstrap/,    //阻止webpack浪费精力去解析这些明知道没有依赖的库
+        noParse: /jquery|bootstrap/    //阻止webpack浪费精力去解析这些明知道没有依赖的库
     },
     optimization: {
         /**
          * Webpack v4以上使用内置插件SplitChunksPlugin抽取公共代码
          */
         splitChunks: {
-            chunks: 'all',  //默认值为 async 表示只会对异步加载的模块进行代码分割 ,可选值 还有 all 和 initial
+            chunks: 'initial',  //默认值为 async 表示只会对异步加载的模块进行代码分割 ,可选值 还有 all 和 initial ,(发现如果有es6动态导入的代码[import()]，并且配置了filename的话设置为all就会打包报错，需要设置为initial)
             minSize: 30000,     //模块最少大于30kb才拆分
             maxSize: 0,     //如果超出了maxSize，会进一步进行拆分
             minChunks: 1,       //模块最少引用一次才会被拆分
