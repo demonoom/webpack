@@ -8,7 +8,7 @@
     "production": "webpack --config webpack.custom.config.js",
     "build": "webpack --config build/webpack.prod.js",
     "dev-build": "webpack --config build/webpack.dev.js",
-    "build:vue": "webpack --config build/webpack.vue.js",
+    "build:react": "webpack --config build/webpack.react.js",
     "watch": "webpack --watch",
     "dev2": "webpack-dev-server --contentBase src --open --port 5000 --hot --compress",
     "dev": "webpack-dev-server --config build/webpack.dev.js",
@@ -58,7 +58,7 @@
     "bootstrap": "^3.4.1",
     "jquery": "^3.5.1",
     "moment": "^2.29.1",
-    "vue": "^2.6.12",
-    "vue-router": "^3.4.9"
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   }
 }

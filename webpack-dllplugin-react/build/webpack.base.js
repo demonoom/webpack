@@ -72,17 +72,11 @@ module.exports = {
          * 两个参数都是正则对象
          */
         new Webpack.IgnorePlugin(/\.\/locale$/, /moment$/),
-        /**
-         * 使用DLLReferencePlugin指定manifest文件的位置即可，让正常打包关联dll
-         */
         new Webpack.DllReferencePlugin({
             manifest: path.join(__dirname, '../dist/manifest.json')
         }),
-        /**
-         * 往HTML中插入引用，注意必须放在HtmlWebpackPlugin之后
-         */
         new AddAssetHtmlWebpackPlugin({
-            filepath: path.join(__dirname, '../dist/vue_dll.js')
+            filepath: path.join(__dirname, '../dist/react_dll.js')
         })
     ],
     module: {
@@ -170,7 +164,7 @@ module.exports = {
                 vendors: { // 自定义缓存组名------为了打包第三方模块
                     test: /[\\/]node_modules[\\/]/, // 检查node_modules目录,只要模块在该目录下就使用上面配置拆分到这个组
                     priority: -10, // 权重-10,决定了哪个组优先匹配,例如node_modules下有个模块要拆分,同时满足vendors和default组,此时就会分到vendors组,因为-10 > -20
-                    filename: 'vendors.js'  //配置了就不会按照 automaticNameDelimiter 的规则命名
+                    filename: 'verdors.js'  //配置了就不会按照 automaticNameDelimiter 的规则命名
                 },
                 default: { // 默认缓存组名----一般用于自己写的模块
                     minChunks: 2, // 最少引用两次才会被拆分

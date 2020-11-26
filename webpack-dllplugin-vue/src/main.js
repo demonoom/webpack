@@ -68,11 +68,11 @@ import VueRouter from "vue-router";
 Vue.use(VueRouter)
 
 const homeComponent = {
-    template: '<h2>我是home</h2>>'
+    template: '<h2>我是home</h2>'
 }
 
 const newsComponent = {
-    template: '<h2>我是news</h2>>'
+    template: '<h2>我是news</h2>'
 }
 
 const router = new VueRouter({
