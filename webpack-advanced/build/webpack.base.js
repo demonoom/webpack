@@ -35,7 +35,7 @@ module.exports = {
             template: "./src/index.html",
             chunks: ['index']
         }),
-        //##3.如果用了html插件，需要手动配置多入口对应的html文件，将指定其对应的输出文件
+        //3.如果用了html插件，需要手动配置多入口对应的html文件，将指定其对应的输出文件
         new HtmlWebpackPlugin({
             filename: "other.html",
             template: "./src/other.html",
@@ -124,7 +124,7 @@ module.exports = {
             //html-withimg-loader和file-loader(url-loader)产生了冲突，同时使用两种loader，需要在file-loader(url-loader)的options中添加一条配置项esModule: false。参考链接https://www.cnblogs.com/webSong/p/12118595.html
             {
                 test: /\.(htm|html)$/,
-                use: 'html-withimg-loader'          //使html中的图片参与到webpack打包中，使用时，只需要在html中正常引用图片即可，webpack会找到对应的资源进行打包，并修改html中的引用路径
+                use: 'html-withimg-loader'          //使html中的图片参与到webpack打包中，使用时，只需要在html中正常引用图片即可，webpack会找到对应的资源进行打包，并修改html中的引用路径（打包后生成文件的路径就是url-loader中配置的outputPath）
             },
             /**
              * 通过expose-loader进行全局变量的注入

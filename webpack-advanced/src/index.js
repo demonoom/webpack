@@ -1,6 +1,6 @@
 console.log('我是Index.js');
 
-import $ from 'jquery'    // node_modules/jquery/package.json > main
+import $ from 'jquery'    // node_modules/jquery/package.json > main   （导入到当前模块的作用域中）
 
 $('body').css('backgroundColor', 'green')
 
@@ -14,6 +14,8 @@ getUserInfo().then((res) => {
 }, (err) => {
     console.log(err);
 })
+
+console.log(IS_DEV, test, test2)
 
 getMoney().then(((res) => {
     console.log(res);
@@ -34,7 +36,7 @@ if (module.hot) {
         //当hot_module模块内容更新时触发
         console.log('hot_module被更新了！')
 
-        //import/export 语法必须在顶级作用域中使用，无法在子级作用域中使用
+        //import / export 语法必须在顶级作用域中使用，无法在子级作用域中使用
         // import str from './hot_module'
 
         var hot_module = require('./hot_module')

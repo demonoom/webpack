@@ -19,7 +19,7 @@ module.exports = merge(baseConfig, {
             // 举例：客户端现在请求的是 /api/getUserInfo
             // 此时会将请求转发到：http://localhost:9999/api/getUserInfo
             '/api': 'http://localhost:9999',
-            '/serve': {
+            '/serve': {   //重写
                 target: 'http://localhost:9999',
                 //转发请求时不会携带 /serve
                 // 举例：客户端现在请求的是 /serve/getMoney
@@ -29,6 +29,7 @@ module.exports = merge(baseConfig, {
                 }
             },
         }
+        //题外话：node服务器中增加CORS的方法只需要安装cors包，在开启服务器之前app.use(cors())即可
     },
     /**
      * 开发环境：cheap-module-eval-source-map
@@ -45,8 +46,8 @@ module.exports = merge(baseConfig, {
          */
         new Webpack.DefinePlugin({
             IS_DEV: 'true',
-            test: '1+1',        //DefinePlugin会解析定义的环境变量表达式，当成js表达式执行
-            test2: '"noom"'
+            test: '1+1',        //DefinePlugin会解析定义的环境变量表达式，当成js表达式执行  这里会解析为2
+            test2: '"noom"'     //DefinePlugin会解析定义的环境变量表达式，当成js表达式执行  这里会解析为字符串
         })
     ]
 })

@@ -20,13 +20,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6d984c7-8428-44b7-b865-bbb4eee7a6a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/webpack-dllplugin-react/build/webpack.react.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack-demo/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack-demo/src/message.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack-demo/src/news.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack-dllplugin-vue/build/webpack.base.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-dllplugin-vue/build/webpack.base.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack-dllplugin-vue/build/webpack.vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-dllplugin-vue/build/webpack.vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack-dllplugin-vue/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-dllplugin-vue/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack-dllplugin-vue/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-dllplugin-vue/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack-dllplugin-vue/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-dllplugin-vue/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-advanced/build/webpack.base.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-advanced/build/webpack.base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-advanced/build/webpack.dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-advanced/build/webpack.dev.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-advanced/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-advanced/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-advanced/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-advanced/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-basic/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-basic/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-basic/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack-basic/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-optimize-css/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-optimize-css/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-optimize-css/assets/LOL.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-optimize-css/build/webpack.base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-optimize-css/build/webpack.dev.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-optimize-css/build/webpack.prod.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-optimize-css/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-optimize-css/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-optimize-css/postcss.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-optimize-css/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-optimize-css/src/css/b.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-optimize-css/src/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-optimize-css/src/img/kda.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-optimize-css/src/img/萨勒芬妮.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-optimize-css/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-optimize-css/src/less/index.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-optimize-css/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-optimize-css/src/scss/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-optimize-css/webpack.custom.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack-optimize-css/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +83,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/webpack-dllplugin-vue" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/webpack-optimize-css/postcss.config.js" />
@@ -128,6 +151,10 @@
       <workItem from="1606356217488" duration="53000" />
       <workItem from="1606356418580" duration="4000" />
       <workItem from="1606356555617" duration="10425000" />
+      <workItem from="1614241551229" duration="9550000" />
+      <workItem from="1614363554329" duration="866000" />
+      <workItem from="1614395253670" duration="836000" />
+      <workItem from="1614396614720" duration="5070000" />
     </task>
     <servers />
   </component>
@@ -158,41 +185,19 @@
     <state x="92" y="92" width="1736" height="866" key="DiffContextDialog" timestamp="1606296795801">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="92" y="92" width="1736" height="866" key="DiffContextDialog/0.0.1920.1050/1920.0.1440.870@0.0.1920.1050" timestamp="1605718543434" />
     <state x="92" y="92" width="1736" height="866" key="DiffContextDialog/0.0.1920.1050/1920.0.2560.1410@0.0.1920.1050" timestamp="1606296795801" />
     <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1606300154876">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1440.870@0.0.1920.1050" timestamp="1605718093940" />
     <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.2560.1410@0.0.1920.1050" timestamp="1606300154876" />
-    <state width="1899" height="285" key="GridCell.Tab.0.bottom" timestamp="1605256268496">
+    <state x="706" y="176" width="998" height="708" key="SettingsEditor" timestamp="1614396593699">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.2560.1410@0.0.1920.1050" timestamp="1605256268496" />
-    <state width="1899" height="285" key="GridCell.Tab.0.center" timestamp="1605256268495">
+    <state x="706" y="176" width="998" height="708" key="SettingsEditor/0.0.1920.1050/1920.0.1440.870@0.0.1920.1050" timestamp="1614396593699" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1614260488476">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.2560.1410@0.0.1920.1050" timestamp="1605256268495" />
-    <state width="1899" height="285" key="GridCell.Tab.0.left" timestamp="1605256268495">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.2560.1410@0.0.1920.1050" timestamp="1605256268495" />
-    <state width="1899" height="285" key="GridCell.Tab.0.right" timestamp="1605256268495">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.2560.1410@0.0.1920.1050" timestamp="1605256268495" />
-    <state x="509" y="227" key="SettingsEditor" timestamp="1605256179450">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="509" y="227" key="SettingsEditor/0.0.1920.1050/1920.0.2560.1410@0.0.1920.1050" timestamp="1605256179450" />
-    <state x="2578" y="337" key="SettingsEditor/0.0.1920.1050/1920.0.2560.1410@1920.0.2560.1410" timestamp="1605256136652" />
-    <state x="662" y="123" width="596" height="804" key="find.popup" timestamp="1605594409500">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="662" y="123" width="596" height="804" key="find.popup/0.0.1920.1050/1920.0.2560.1410@0.0.1920.1050" timestamp="1605594409500" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1606375964358">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.0.1440.870@0.0.1920.1050" timestamp="1614260488476" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.0.2560.1410@0.0.1920.1050" timestamp="1606375964358" />
   </component>
   <component name="XDebuggerManager">

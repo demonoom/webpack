@@ -18,17 +18,20 @@ module.exports = {
     mode: 'production',
     //开启监视模式，此时执行webpack指令进行打包会监视文件变化自动打包
     //watch: true
+    /**
+     * devServer的配置 会在内存中生成一个打包好的bundle.js 专供开发时使用
+     */
     devServer: {
         open: true,               //编译结束打开浏览器
         port: 3000,               //express服务端口号
         compress: true,           //express服务器gzip压缩
         hot: true,                 //热模块更替（HMR），老版本还需要装插件，新版不需要
-        // contentBase: './src'     //服务器根目录
+        // contentBase: './src'     //服务器根目录  使用HtmlWebpackPlugin不需要此配置
     },
     plugins: [
         /**
          * 1.devServer时根据模板在express项目根目录下生成html文件（类似于devServer生成内存中的bundle.js）
-         * 2.devServer时自动引入bundle.js
+         * 2.devServer时在内存中生成的html也会自动引入内存中的bundle.js
          * 3.打包时自动生成index.html
          */
         new HtmlWebpackPlugin({
@@ -40,7 +43,7 @@ module.exports = {
          */
         new CleanWebpackPlugin(),
         /**
-         * 该插件将不需要webpack打包的静态资源复制到打包后的文件夹下
+         * 该插件将不需要webpack打包的 静态资源 复制到打包后的文件夹下
          */
         new CopyWebpackPlugin([{
             from: path.resolve('assets'),
@@ -75,8 +78,8 @@ module.exports = {
                     loader: "url-loader",      //url-loader封装了file-loader，所以使用url-loader时需要安装file-loader
                     options: {
                         limit: 5 * 1024,        //limit表示如果图片大于5kb，就以路径形式展示，小于的话就用base64格式展示
-                        outputPath: 'images',
-                        name: '[name]-[hash:4].[ext]'
+                        outputPath: 'images',       //打包输出目录
+                        name: '[name]-[hash:4].[ext]'    //打包输出文件名称
                     }
                 }
             },
@@ -108,6 +111,7 @@ module.exports = {
         ]
     },
     /**
+     * source map  源码映射工具  否则可能打开的是babel转化后的代码，行数无法与源码进行对应
      * 开发环境：cheap-module-eval-source-map
      * 生产环境：none (不使用source map)
      * 使用cheap模式可以大幅提高source map生成的效率
